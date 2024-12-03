@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIET Mentorship Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content animate__animated animate__slideInDown">
+            <h1>SLIET Mentorship Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#mentors" class="nav-link">Mentors</a></li>
+                    <li><a href="#booking" class="nav-link">Book a Session</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li>
+                        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="animate__animated animate__fadeIn">
+            <div class="hero-section">
+                <h2>Welcome to SLIET Mentorship Platform</h2>
+                <p class="hero-text">Connect with expert faculty mentors for personalized academic and career guidance.</p>
+                <a href="#booking" class="cta-button animate__animated animate__pulse animate__infinite">Book a Session Now</a>
+            </div>
+        </section>
+
+        <section id="mentors">
+            <h2 class="section-title">Our Expert Mentors</h2>
+            <div class="search-container">
+                <input type="text" id="mentor-search" placeholder="Search by expertise or name..." class="search-input">
+            </div>
+            <div id="mentor-list" class="mentor-grid">
+                <!-- Mentor cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <h2 class="section-title">Schedule a Mentorship Session</h2>
+            <div class="booking-container">
+                <form id="booking-form" class="animate__animated animate__fadeInUp">
+                    <!-- Form will be populated dynamically by JavaScript -->
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="about-section animate__animated animate__fadeIn">
+            <h2 class="section-title">About Our Platform</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <p>Empowering students through expert guidance and mentorship.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Why Choose Us</h3>
+                    <p>Connect with experienced faculty mentors who are leaders in their fields.</p>
+                </div>
+                <div class="about-card">
+                    <h3>How It Works</h3>
+                    <p>Simple booking process, flexible scheduling, and personalized sessions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="footer-content">
+            <p>&copy; 2024 SLIET Mentorship Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification hidden">
+        <!-- Notifications will be shown here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
